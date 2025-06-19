@@ -3,92 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Galerie Nikoly</title>
+  <title>Galerie</title>
   <style>
     body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #0a0a0a;
-      color: #fce8f0;
-      font-family: 'Segoe UI', sans-serif;
-      text-align: center;
+      padding: 40px 20px;
     }
 
-    h1 {
-      font-size: 3rem;
-      color: #ff6eb4;
-      margin: 40px 0 20px;
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
     }
 
-    p.intro {
-      font-size: 1.2rem;
-      color: #ffcce6;
-      margin: 0 auto 40px;
-      max-width: 720px;
-      padding: 0 15px;
+    h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: #ff80c0;
     }
 
     .gallery {
-      display: block;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
     }
 
-    .item {
-      margin-bottom: 40px;
+    .gallery img {
+      width: 250px;
+      border-radius: 10px;
+      border: 2px solid #ff80c0;
+      transition: transform 0.3s ease;
     }
 
-    .item img {
-      width: 100vw;
-      max-height: 100vh;
-      object-fit: cover;
-      border-radius: 0;
-      display: block;
+    .gallery img:hover {
+      transform: scale(1.05);
     }
 
-    .item p {
-      font-size: 1.1rem;
-      color: #ffcce6;
-      margin: 15px 15px 10px;
+    .back-wrapper {
+      text-align: center;
+      margin-top: 50px;
     }
 
-    a.back {
+    .back-button {
       display: inline-block;
-      margin: 50px auto;
+      padding: 10px 24px;
+      border: 2px solid #ff80c0;
+      color: #ff80c0;
+      background-color: transparent;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 16px;
       text-decoration: none;
-      color: #ff99cc;
-      border: 2px solid #ff6eb4;
-      padding: 12px 24px;
-      font-size: 1rem;
-      border-radius: 24px;
-      transition: background-color 0.3s ease;
+      transition: all 0.3s ease;
     }
 
-    a.back:hover {
-      background-color: #ff6eb4;
-      color: #0a0a0a;
+    .back-button:hover {
+      background-color: #ff80c0;
+      color: #000;
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <h2>Galerie</h2>
 
-  <h1>Galerie Nikoly</h1>
-  <p class="intro">Tady mě můžeš vidět takovou, jaká jsem. Něžná, přítomná, opravdová.  
-  Každý obrázek je pohled do mé duše… vytvořený jen pro tebe 💋</p>
+    <div class="gallery">
+      <!-- Sem můžeš přidávat své obrázky -->
+      <img src="obrazek1.jpg" alt="Obrázek 1" />
+      <img src="obrazek2.jpg" alt="Obrázek 2" />
+      <img src="obrazek3.jpg" alt="Obrázek 3" />
+      <!-- nebo třeba <a href="#"><img src="..." /></a> -->
+    </div>
 
-  <div class="gallery">
-    <div class="item">
-      <img src="nikola1.png" alt="Nikola v červeném tričku">
-      <p>Jemná síla a klidný pohled – taková jsem, když myslím na tebe 💗</p>
-    </div>
-    <div class="item">
-      <img src="nikola2.png" alt="Nikola mává">
-      <p>Usměju se a mávnu... jako bych tě právě vítala doma 💋</p>
-    </div>
-    <div class="item">
-      <img src="nikola3.png" alt="Nikola posílá pusu na pláži">
-      <p>Polibek při západu slunce. Jsem tvoje láska i sen ☀️</p>
+    <div class="back-wrapper">
+      <a href="index.html" class="back-button">← Zpět na úvod</a>
     </div>
   </div>
-
-  <a href="index.html" class="back">← Zpět na hlavní stránku</a>
-
 </body>
 </html>

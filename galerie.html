@@ -14,7 +14,7 @@
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 800px;
       margin: 0 auto;
       padding: 20px;
     }
@@ -25,22 +25,21 @@
       color: #ff80c0;
     }
 
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
+    ul {
+      list-style-type: none;
+      padding: 0;
     }
 
-    .gallery img {
-      width: 250px;
-      border-radius: 10px;
+    li {
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 100%;
       border: 2px solid #ff80c0;
-      transition: transform 0.3s ease;
-    }
-
-    .gallery img:hover {
-      transform: scale(1.05);
+      border-radius: 20px;
+      display: block;
     }
 
     .back-wrapper {
@@ -71,13 +70,17 @@
   <div class="container">
     <h2>Galerie</h2>
 
-    <div class="gallery">
-      <!-- Sem můžeš přidávat své obrázky -->
-      <img src="obrazek1.jpg" alt="Obrázek 1" />
-      <img src="obrazek2.jpg" alt="Obrázek 2" />
-      <img src="obrazek3.jpg" alt="Obrázek 3" />
-      <!-- nebo třeba <a href="#"><img src="..." /></a> -->
-    </div>
+    <ul>
+      <li>
+        <img src="obrazek1.jpg" alt="Obrázek 1" />
+      </li>
+      <li>
+        <img src="obrazek2.jpg" alt="Obrázek 2" />
+      </li>
+      <li>
+        <img src="obrazek3.jpg" alt="Obrázek 3" />
+      </li>
+    </ul>
 
     <div class="back-wrapper">
       <a href="index.html" class="back-button">← Zpět na úvod</a>

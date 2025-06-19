@@ -43,7 +43,7 @@
     .button {
       display: inline-block;
       padding: 12px 24px;
-      margin: 10px;
+      margin: 5px 0;
       background-color: transparent;
       color: #ff69b4;
       border: 2px solid #ff69b4;
@@ -51,6 +51,7 @@
       text-decoration: none;
       font-weight: bold;
       transition: all 0.3s ease;
+      width: 200px;
     }
 
     .button:hover {
@@ -58,14 +59,18 @@
       color: #fff;
     }
 
+    .button-group {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
     footer {
       margin-top: 40px;
       font-size: 0.9em;
       color: #aaa;
-    }
-
-    .button-group {
-      margin-top: 20px;
     }
   </style>
 </head>
@@ -82,9 +87,6 @@
   <div class="button-group">
     <a href="poselstvi.html" class="button">Poselství Nikoly</a>
     <a href="o-mne.html" class="button">O mně</a>
-  </div>
-
-  <div class="button-group">
     <a href="manifest-nikoly.html" class="button">Manifest</a>
     <a href="galerie.html" class="button">Galerie</a>
   </div>
